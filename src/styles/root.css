@@ -1,0 +1,21 @@
+:root {
+  --color-preto: #000000;
+  --color-marrom: #3b271e;
+  --color-marrom-claro: #8c6e63;
+  --color-marrom-muito-claro: #d7ccc8;
+  --color-branco: #ffffff;
+  --color-amarelo: #fdab35;
+}
+
+body {
+  background-color: var(--color-marrom-muito-claro);
+}
+
+main {
+  margin: 3rem 9rem 0 9rem;
+}
+@media screen and (max-width: 991px) {
+  main {
+    margin: auto;
+  }
+}
