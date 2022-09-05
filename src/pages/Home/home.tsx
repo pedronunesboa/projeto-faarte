@@ -1,5 +1,8 @@
 // import './App.css'
 
+import './cardProduto.css'
+import './carrosel.css'
+
 function Home() {
   return( 
 <body>

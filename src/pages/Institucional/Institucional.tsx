@@ -1,6 +1,7 @@
 // import './App.css'
+import './Institucional.css'
 
-function App() {
+function Institucional() {
   return( 
     <body>
       <header>
@@ -90,4 +91,4 @@ function App() {
   )
 }
 
-export default App
+export default Institucional

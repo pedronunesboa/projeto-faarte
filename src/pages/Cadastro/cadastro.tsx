@@ -1,79 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/root.css">
-    <link rel="stylesheet" href="../css/cadastro.css">
-
-    <title>Cadastro associação</title>
-</head>
-
-<body>
+function Cadastro(){
+    return (
+    <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../html/index.html"><img class="navbar-brand navbar-logo"
+        <nav className="navbar navbar-expand-lg bg-light">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="../html/index.html"><img className="navbar-brand navbar-logo"
                         src="../assets/img/logoFAARTE.png" alt="Logo FARTE"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success-pesquisar" type="submit"><img class="icon-search"
-                                    src="../assets/img/search.svg"></button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form className="d-flex" role="search">
+                            <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                            <button className="btn btn-outline-success-pesquisar" type="submit"><img className="icon-search"
+                                    src="../assets/img/search.svg"/></button>
                         </form>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page"
                                 href="../html/institucional.html">Institucional</a>
                         </li>
                         <a href="../html/login.html"><button type="button"
-                                class="btn btn-primary-button">Login</button></a>
-                        <span class="span-ou">Ou</span>
+                                className="btn btn-primary-button">Login</button></a>
+                        <span className="span-ou">Ou</span>
                         <a href="../html/fichacadastro.html"><button type="button"
-                                class="btn btn-primary-button">Cadastre-se</button></a>
+                                className="btn btn-primary-button">Cadastre-se</button></a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="cadastro">
+    <main className="cadastro">
 
-        <div class="cadastro__container">
-            <h1 class="cadastro__title">Ficha de Filiação de Associado</h1>
+        <div className="cadastro__container">
+            <h1 className="cadastro__title">Ficha de Filiação de Associado</h1>
             <h2>Dados da Entidade</h2>
-            <form class="cadastro__form">
+            <form className="cadastro__form">
 
                 <label for="nome-entidade">Nome entidade:</label>
-                <input class="cadastro__input" type="text" id="nome-entidade" name="nome-entidade"
-                    placeholder="nome entidade" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="nome-entidade" name="nome-entidade"
+                    placeholder="nome entidade" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="nome-fantasia">Nome fantasia:</label>
-                <input class="cadastro__input" type="text" id="nome-fantasia" name="nome-fantasia"
-                    placeholder="nome fantasia" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="nome-fantasia" name="nome-fantasia"
+                    placeholder="nome fantasia" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="forma-juridica">Forma Jurídica (Associação e/ou Cooperativa, ou coletivo):</label>
-                <input class="cadastro__input" type="text" id="forma-juridica" name="forma-juridica"
-                    placeholder="forma juridica" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="forma-juridica" name="forma-juridica"
+                    placeholder="forma juridica" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="endereco-da-entidade">Endereço</label>
-                <input class="cadastro__input" type="text" id="endereco" name="endereco" placeholder="endereço"
-                    required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="endereco" name="endereco" placeholder="endereço"
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="cidade-da-entidade">Cidade da Entidade</label>
-                <select class="cadastro__input" name="cidade-da-entidade" id="cidade-da-entidade">
+                <select className="cadastro__input" name="cidade-da-entidade" id="cidade-da-entidade">
                     <option label="selecione" value="-1" selected="selected">Selecione</option>
                     <option label="Gama" value="g">Gama</option>
                     <option label="Taguatinga" value="t">Taguatinga</option>
@@ -95,45 +78,45 @@
                 </select>
 
                 <label for="telefone-da-entidade">Telefone</label>
-                <input class="cadastro__input" type="tel" id="telefone-da-entidade" name="telefone-da-entidade"
-                    placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="tel" id="telefone-da-entidade" name="telefone-da-entidade"
+                    placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="cnpj">CNPJ</label>
-                <input class="cadastro__input" type="text" placeholder="xx.xxx.xxx/0001-xx"
-                    onkeypress="$(this).mask('00.000.000/0000-00')" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" placeholder="xx.xxx.xxx/0001-xx"
+                    onkeypress="$(this).mask('00.000.000/0000-00')" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="cep-da-entidade">CEP</label>
-                <input class="cadastro__input" type="text" id="cep-da-entidade" name="cep-da-entidade"
-                    placeholder="xxxxx-xxx" pattern="\[\s][0-9]{5}-[0-9]{3}" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="cep-da-entidade" name="cep-da-entidade"
+                    placeholder="xxxxx-xxx" pattern="\[\s][0-9]{5}-[0-9]{3}" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="data-criacao">Data de Criação</label>
-                <input class="cadastro__input" type="date" id="data-criacao" name="data-criacao"
+                <input className="cadastro__input" type="date" id="data-criacao" name="data-criacao"
                     placeholder="dd/mm/aaaa"
                     pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]|(?:Jan|Mar|May|Jul|Aug|Oct|Dec)))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2]|(?:Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)(?:0?2|(?:Feb))\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9]|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep))|(?:1[0-2]|(?:Oct|Nov|Dec)))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
-                    required>
-                <span class="cadastro__input-border"></span>
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="email-entidade">E-mail da entidade</label>
-                <input class="cadastro__input" type="email" id="email" name="email" placeholder="e-mail" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="email" id="email" name="email" placeholder="e-mail" required/>
+                <span className="cadastro__input-border"></span>
 
 
                 <h2>Dados do Responsável</h2>
 
 
                 <label for="nome-responsavel">Nome do Responsável</label>
-                <input class="cadastro__input" type="text" id="nome-responsavel" name="nome-responsavel"
-                    placeholder="nome do responsável" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="nome-responsavel" name="nome-responsavel"
+                    placeholder="nome do responsável" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="cargo-na-entidade">Cargo na Entidade</label>
-                <input class="cadastro__input" type="text" id="cargo-na-entidade" name="cargo-na-entidade"
-                    placeholder="nome na entidade" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="cargo-na-entidade" name="cargo-na-entidade"
+                    placeholder="nome na entidade" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="endereco">Endereço</label>
-                <input class="cadastro__input" type="text" id="endereco" name="endereco" placeholder="endereço"
-                    required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="endereco" name="endereco" placeholder="endereço"
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="estado">Estado</label>
-                <select class="cadastro__input" name="estado">
+                <select className="cadastro__input" name="estado">
                     <option value="estado">Selecione o Estado</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -163,79 +146,79 @@
                     <option value="sp">São Paulo</option>
                     <option value="to">Tocantins</option>
                 </select>
-                <span class="cadastro__input-border"></span>
+                <span className="cadastro__input-border"></span>
                 <label for="cidade">Cidade</label>
-                <input class="cadastro__input" type="text" id="cidade" name="cidade" placeholder="cidade" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="cidade" name="cidade" placeholder="cidade" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="cep">CEP</label>
-                <input class="cadastro__input" type="text" id="cep" name="cep" placeholder="xxxxx-xxx"
-                    pattern="\[\s][0-9]{5}-[0-9]{3}" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="cep" name="cep" placeholder="xxxxx-xxx"
+                    pattern="\[\s][0-9]{5}-[0-9]{3}" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="telefone">Telefone</label>
-                <input class="cadastro__input" type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx"
-                    pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx"
+                    pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="cpf">CPF</label>
-                <input class="cadastro__input" type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
+                <input className="cadastro__input" type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
                     pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
-                    required>
-                <span class="cadastro__input-border"></span>
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="rg">RG</label>
-                <input class="cadastro__input" type="text" id="rg" name="rg" placeholder="0.000.000"
+                <input className="cadastro__input" type="text" id="rg" name="rg" placeholder="0.000.000"
                     pattern="(^\d{1,2}).?(\d{3}).?(\d{3})-?(\d{1}|X|x$)" required>
-                <span class="cadastro__input-border"></span>
+                <span className="cadastro__input-border"/></span>
                 <label for="orgao-expedidor:">Órgão Expedidor</label>
-                <input class="cadastro__input" type="text" id="orgao" name="orgao"
-                    placeholder="expedidor da Carteira de Identidade" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="text" id="orgao" name="orgao"
+                    placeholder="expedidor da Carteira de Identidade" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="estado-civil">Estado civil</label>
-                <select class="cadastro__input" name="estado">
+                <select className="cadastro__input" name="estado">
                     <option value="estado">Estado Civil</option>
                     <option value="solteiro">Solteiro (a)</option>
                     <option value="solteiro">Casado (a)</option>
                     <option value="solteiro">Divorciado (a)</option>
                     <option value="solteiro">Viúvo (a)</option>
                 </select>
-                <span class="cadastro__input-border"></span>
+                <span className="cadastro__input-border"></span>
                 <label for="nacionalidade">Nacionalidade</label>
-                <input class="cadastro__input" type="text" id="nacionalidade" name="nacionalidade"
+                <input className="cadastro__input" type="text" id="nacionalidade" name="nacionalidade"
                     placeholder="brasileiro (a)" required>
-                <span class="cadastro__input-border"></span>
+                <span className="cadastro__input-border"></span>
                 <label for="naturalidade">Naturalidade</label>
-                <input class="cadastro__input" type="text" id="naturalidade" name="naturalidade"
+                <input className="cadastro__input" type="text" id="naturalidade" name="naturalidade"
                     placeholder="local de origem" required>
-                <span class="cadastro__input-border"></span>
+                <span className="cadastro__input-border"></span>
                 <label for="data-filiacao">Data de Filiação:</label>
-                <input class="cadastro__input" type="date" id="data-filiacao" name="data-filiacao"
+                <input className="cadastro__input" type="date" id="data-filiacao" name="data-filiacao"
                     placeholder="dd/mm/aaaa"
                     pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]|(?:Jan|Mar|May|Jul|Aug|Oct|Dec)))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2]|(?:Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)(?:0?2|(?:Feb))\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9]|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep))|(?:1[0-2]|(?:Oct|Nov|Dec)))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
-                    required>
-                <span class="cadastro__input-border"></span>
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="carteira-de-artesão-SICAB">Nº Carteira de Artesão SICAB:</label>
-                <input class="cadastro__input" type="number" id="carteira-de-artesão" name="carteira-de-artesão"
-                    placeholder="" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="number" id="carteira-de-artesão" name="carteira-de-artesão"
+                    placeholder="" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="data-vencimento-carteira">Data de vencimento carteira:</label>
-                <input class="cadastro__input" type="date" id="data-vencimento-carteira" name="data-vencimento-carteira"
+                <input className="cadastro__input" type="date" id="data-vencimento-carteira" name="data-vencimento-carteira"
                     placeholder="dd/mm/aaaa"
                     pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]|(?:Jan|Mar|May|Jul|Aug|Oct|Dec)))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2]|(?:Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)(?:0?2|(?:Feb))\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9]|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep))|(?:1[0-2]|(?:Oct|Nov|Dec)))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
-                    required>
-                <span class="cadastro__input-border"></span>
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="email-responsavel">E-mail do Responsável</label>
-                <input class="cadastro__input" type="email" id="email" name="email" placeholder="e-mail" required>
-                <span class="cadastro__input-border"></span>
+                <input className="cadastro__input" type="email" id="email" name="email" placeholder="e-mail" required/>
+                <span className="cadastro__input-border"></span>
                 <label for="password">Senha</label>
-                <input class="cadastro__input" type="password" id="password" name="password"
+                <input className="cadastro__input" type="password" id="password" name="password"
                     placeholder="senha 8 caracteres"
                     pattern="(?=^.{6,}$)((?=.*\w)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[|!'$%&\/\(\)\?\^\'\\\+\-\*]))^.*"
-                    required>
-                <span class="cadastro__input-border"></span>
+                    required/>
+                <span className="cadastro__input-border"></span>
                 <label for="produtos-expostos-na-associação">
                     <h3>Dados dos produtos expostos na Associação:</h3>
                 </label>
                 <textarea></textarea>
                 <br>
-                <input class="cadastro__submit" type="submit" value="Enviar">
+                <input className="cadastro__submit" type="submit" value="Enviar">
 
             </form>
         </div>
@@ -243,7 +226,7 @@
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        crossOrigin="anonymous"></script>
     <script>$("#telefone").mask("(00) 00000-0009");</script>
     <script>$("#telefone-da-entidade").mask("(00) 00000-0009");</script>
     <script>$("#cep").mask("00000-000");</script>
@@ -251,4 +234,7 @@
     <script>$("#rg").mask("0.000.000");</script>
 </body>
 
-</html>
+    )
+}
+
+export default Cadastro
