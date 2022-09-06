@@ -1,0 +1,51 @@
+.bg-light {
+  background-color: var(--color-marrom) !important;
+  color: var(--color-branco);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--color-branco);
+}
+
+.navbar-logo {
+  border-radius: 50px;
+  width: 44px;
+  height: 49px;
+}
+
+.navbar-space {
+  justify-content: space-between;
+  display: flex;
+}
+
+.icon-search {
+  width: 1.5rem;
+}
+
+.span-ou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.btn-primary-button {
+  color: var(--color-preto);
+  border-radius: 50px;
+  background-color: var(--color-marrom-muito-claro);
+}
+
+.btn-primary-button:hover {
+  color: var(--color-branco);
+}
+
+.btn-outline-success-pesquisar {
+  border-color: none;
+}
+
+@media screen and (max-width: 991px) {
+  .btn-primary-button {
+    width: 100%;
+  }
+}
