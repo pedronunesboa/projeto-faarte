@@ -8,7 +8,7 @@ function Login(){
                 <nav className="navbar navbar-expand-lg bg-light">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="../html/index.html"><img className="navbar-brand navbar-logo"
-                                src="../assets/img/logoFAARTE.png" alt="Logo FARTE"/></a>
+                                src="./src/assets/img/logoFAARTE.png" alt="Logo FARTE"/></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -19,16 +19,16 @@ function Login(){
                                 <form className="d-flex" role="search">
                                     <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
                                     <button className="btn btn-outline-success-pesquisar" type="submit"><img className="icon-search"
-                                            src="../assets/img/search.svg"/></button>
+                                            src="./src/assets/img/search.svg"/></button>
                                 </form>
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page"
-                                        href="../html/institucional.html">Institucional</a>
+                                        href="/institucional">Institucional</a>
                                 </li>
-                                <a href="../html/login.html"><button type="button"
+                                <a href="/login"><button type="button"
                                         className="btn btn-primary-button">Login</button></a>
                                 <span className="span-ou">Ou</span>
-                                <a href="../html/fichacadastro.html"><button type="button"
+                                <a href="/cadastro"><button type="button"
                                         className="btn btn-primary-button">Cadastre-se</button></a>
                             </ul>
                         </div>

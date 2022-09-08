@@ -1,5 +1,4 @@
 // import './App.css'
-
 import './cardProduto.css'
 import './carrosel.css'
 
@@ -9,8 +8,8 @@ function Home() {
     <header>
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="../html/index.html"><img className="navbar-brand navbar-logo"
-                        src="../assets/img/logoFAARTE.png" alt="Logo FARTE"/></a>
+                <a className="navbar-brand" href="/"><img className="navbar-brand navbar-logo"
+                        src="./src/assets/img/logoFAARTE.png" alt="Logo FARTE"/></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -21,14 +20,14 @@ function Home() {
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
                             <button className="btn btn-outline-success-pesquisar" type="submit"><img className="icon-search"
-                                    src="../assets/img/search.svg"/></button>
+                                    src="./src/assets/img/search.svg"/></button>
                         </form>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="../html/institucional.html">Institucional</a>
+                            <a className="nav-link active" aria-current="page" href="/institucional">Institucional</a>
                         </li>
-                        <a href="../html/login.html"><button type="button" className="btn btn-primary-button">Login</button></a>
-                        <span className="span-ou">Ou</span>
-                        <a href="../html/fichacadastro.html"><button type="button" className="btn btn-primary-button">Cadastre-se</button></a>
+                        <a href="/login"><button type="button" className="btn btn-primary-button">Login</button></a>
+                        <span className="span-ou">|</span>
+                        <a href="/cadastro"><button type="button" className="btn btn-primary-button">Cadastre-se</button></a>
                     </ul>
                 </div>
             </div>
@@ -46,13 +45,13 @@ function Home() {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="../assets/img/pexels-sanketh-rao-716107.jpg" className="d-block w-100" alt="..."/>
+                    <img src="./src/assets/img/pexels-sanketh-rao-716107.jpg" className="d-block w-100" alt="..."/>
                 </div>
                 <div className="carousel-item">
-                    <img src="../assets/img/pexels-monstera-6621339.jpg" className="d-block w-100" alt="..."/>
+                    <img src="./src/assets/img/pexels-monstera-6621339.jpg" className="d-block w-100" alt="..."/>
                 </div>
                 <div className="carousel-item">
-                    <img src="../assets/img/pexels-marina-sirazetdinova-2961010.jpg" className="d-block w-100" alt="..."/>
+                    <img src="./src/assets/img/pexels-marina-sirazetdinova-2961010.jpg" className="d-block w-100" alt="..."/>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -71,7 +70,7 @@ function Home() {
 
         <section className="card-produto">
             <div className="card-ofertas" id="card1">
-                <img src="../assets/img/img1.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/img1.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -81,7 +80,7 @@ function Home() {
             </div>
 
             <div className="card-ofertas" id="card2">
-                <img src="../assets/img/6ffd62e0-5c50-45c1-9434-35a7f5d0a72e.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/6ffd62e0-5c50-45c1-9434-35a7f5d0a72e.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title 2</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -91,7 +90,7 @@ function Home() {
             </div>
 
             <div className="card-ofertas" id="card3">
-                <img src="../assets/img/8952a8d0-5273-4f79-a6c9-cf2ea6648e71.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/8952a8d0-5273-4f79-a6c9-cf2ea6648e71.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -101,7 +100,7 @@ function Home() {
             </div>
 
             <div className="card-ofertas" id="card4">
-                <img src="../assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -110,7 +109,7 @@ function Home() {
                 </div>
             </div>
             <div className="card-ofertas" id="card5">
-                <img src="../assets/img/img1.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/img1.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -119,7 +118,7 @@ function Home() {
                 </div>
             </div>
             <div className="card-ofertas" id="card6">
-                <img src="../assets/img/6ffd62e0-5c50-45c1-9434-35a7f5d0a72e.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/6ffd62e0-5c50-45c1-9434-35a7f5d0a72e.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -128,7 +127,7 @@ function Home() {
                 </div>
             </div>
             <div className="card-ofertas" id="card7">
-                <img src="../assets/img/8952a8d0-5273-4f79-a6c9-cf2ea6648e71.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/8952a8d0-5273-4f79-a6c9-cf2ea6648e71.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -137,7 +136,7 @@ function Home() {
                 </div>
             </div>
             <div className="card-ofertas" id="card8">
-                <img src="../assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -146,7 +145,7 @@ function Home() {
                 </div>
             </div>
             <div className="card-ofertas" id="card9">
-                <img src="../assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg" className="card-img-top" alt="..."/>
+                <img src="./src/assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the

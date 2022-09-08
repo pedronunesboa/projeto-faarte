@@ -1,5 +1,5 @@
 // import './App.css'
-import './Institucional.css'
+// import './Institucional.css'
 
 function Institucional() {
   return( 
@@ -7,7 +7,7 @@ function Institucional() {
       <header>
         <nav className='navbar navbar-expand-lg bg-light'>
             <div className='container-fluid'>
-                <a className="navbar-brand" href="../html/index.html"><img className="navbar-brand navbar-logo" src="./src/assets/img/logoFAARTE.png" alt="Logo FARTE"></img></a>
+                <a className="navbar-brand" href="/"><img className="navbar-brand navbar-logo" src="./src/assets/img/logoFAARTE.png" alt="Logo FARTE"></img></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@ function Institucional() {
                         </form>
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page"
-                                href="../html/institucional.html">Institucional</a>
+                                href="/institucional">Institucional</a>
                         </li>
                         <button type="button" className="btn btn-primary-button">Login</button>
-                        <span className="span-ou">Ou</span>
+                        <span className="span-ou">ou</span>
                         <button type="button" className="btn btn-primary-button">Cadastre-se</button>
                     </ul>
                 </div>
