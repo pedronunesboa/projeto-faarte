@@ -24,9 +24,11 @@ function Institucional() {
                             <a className="nav-link active" aria-current="page"
                                 href="/institucional">Institucional</a>
                         </li>
-                        <button type="button" className="btn btn-primary-button">Login</button>
+                        <a href="/login"><button type="button"
+                                        className="btn btn-primary-button">Login</button></a>
                         <span className="span-ou">ou</span>
-                        <button type="button" className="btn btn-primary-button">Cadastre-se</button>
+                        <a href="/cadastrar"><button type="button"
+                                        className="btn btn-primary-button">Cadastre-se</button></a>
                     </ul>
                 </div>
             </div>
@@ -37,54 +39,53 @@ function Institucional() {
     <div className="App">
       <main className='institucional'>
 
-<div className='institucional__container'>
+        <div className='institucional__container'>
+            <h1 className='institucional__title'>Apresentação</h1>
+            <p className='institucional__texto'>
+                A FAARTE – Federação das Associações de Artesãos do Distrito Federal e Entorno, fundada a mais de trinta
+                anos, é pioneira no segmento de artesanato. Como entidade sem fins lucrativos, tem a missão de fomentar
+                ações que promovam os mais de trinta e quatro mil artesãos com seus trabalhos, em benefício da classe
+                artesã e também da sociedade.
+            </p>
 
-    <h1 className='institucional__title'>Apresentação</h1>
-    <p className='institucional__texto'>
-        A FAARTE – Federação das Associações de Artesãos do Distrito Federal e Entorno, fundada a mais de trinta
-        anos, é pioneira no segmento de artesanato. Como entidade sem fins lucrativos, tem a missão de fomentar
-        ações que promovam os mais de trinta e quatro mil artesãos com seus trabalhos, em benefício da classe
-        artesã e também da sociedade.
-    </p>
+            <h2 className='institucional__title'>Quem somos</h2>
+            <p className='institucional__texto'>
+                A Federação das Associações dos Artesãos do Distrito Federal e Entorno – FAARTE/DF, entidade de
+                Administração Estadual, é formada pela união das entidades do Distrito Federal e Entorno, abaixo citadas
+                no Artigo 4º, de âmbito Estadual e Municipal, tem sua sede no SCS Quadra 01 Sala 209 – Edifício Ceará –
+                Brasília – DF, CEP: 70303-900.
+                CNPJ: 00.686.568/0001-08
+            </p>
+            <p className='institucional__texto'>
+                A Federação das Associações de Artesãos do Distrito Federal e Entorno é constituída pelas Associações,
+                Sindicatos, Empreendimentos da Economia Solidária, Povos Tradicionais e Cooperativas de Artesãos, ora
+                denominadas simplesmente por Entidades Artesanais e Manuelistas, existentes no Distrito Federal e
+                Entorno que a ela livremente se filiem.
+            </p>
+            <p className='institucional__texto'>
+                Entende-se por Entidades Artesanais, aquelas que agreguem produtores de trabalhos manuais e Artesanais a
+                elas filiadas.
+                administrada por uma diretoria composta dos seguintes membros:
+            <ul className='institucional__texto institucional__texto-lista'>
+                <li>Diretor-Presidente;</li>
+                <li>Diretor vice-presidente;</li>
+                <li>Diretor Secretário;</li>
+                <li>2º Secretário;</li>
+                <li>Diretor Tesoureiro;</li>
+                <li>2º Tesoureiro;</li>
+            </ul>
+            </p>
+            <h3 className='Institucional_sub-title'>Composto por</h3>
+            <ul className='institucional__texto institucional__texto-lista'>
+                <li>Presidente: Hebert Tavares de Amorim</li>
+                <li>Vice-presidente: Maria Bernadete Almeida Rodrigues,</li>
+                <li>1° tesoureira: Maria do Socorro Silva</li>
+                <li>2° tesoureira: Ana Cláudia Batista da Silva</li>
+                <li>1° Secretaria: Maria de Fátima Roque</li>
+                <li>2° Secretaria: Katia Maria Gonçalves da Silva</li>
+            </ul>
 
-    <h2 className='institucional__title'>Quem somos</h2>
-    <p className='institucional__texto'>
-        A Federação das Associações dos Artesãos do Distrito Federal e Entorno – FAARTE/DF, entidade de
-        Administração Estadual, é formada pela união das entidades do Distrito Federal e Entorno, abaixo citadas
-        no Artigo 4º, de âmbito Estadual e Municipal, tem sua sede no SCS Quadra 01 Sala 209 – Edifício Ceará –
-        Brasília – DF, CEP: 70303-900.
-        CNPJ: 00.686.568/0001-08
-    </p>
-    <p className='institucional__texto'>
-        A Federação das Associações de Artesãos do Distrito Federal e Entorno é constituída pelas Associações,
-        Sindicatos, Empreendimentos da Economia Solidária, Povos Tradicionais e Cooperativas de Artesãos, ora
-        denominadas simplesmente por Entidades Artesanais e Manuelistas, existentes no Distrito Federal e
-        Entorno que a ela livremente se filiem.
-    </p>
-    <p className='institucional__texto'>
-        Entende-se por Entidades Artesanais, aquelas que agreguem produtores de trabalhos manuais e Artesanais a
-        elas filiadas.
-        administrada por uma diretoria composta dos seguintes membros:
-    <ul className='institucional__texto institucional__texto-lista'>
-        <li>Diretor-Presidente;</li>
-        <li>Diretor vice-presidente;</li>
-        <li>Diretor Secretário;</li>
-        <li>2º Secretário;</li>
-        <li>Diretor Tesoureiro;</li>
-        <li>2º Tesoureiro;</li>
-    </ul>
-    </p>
-    <h3 className='Institucional_sub-title'>Composto por</h3>
-    <ul className='institucional__texto institucional__texto-lista'>
-        <li>Presidente: Hebert Tavares de Amorim</li>
-        <li>Vice-presidente: Maria Bernadete Almeida Rodrigues,</li>
-        <li>1° tesoureira: Maria do Socorro Silva</li>
-        <li>2° tesoureira: Ana Cláudia Batista da Silva</li>
-        <li>1° Secretaria: Maria de Fátima Roque</li>
-        <li>2° Secretaria: Katia Maria Gonçalves da Silva</li>
-    </ul>
-
-</div>
+    </div>
 </main>
     </div>
     </body>

@@ -1,5 +1,4 @@
 import './login.css'
-
 function Login(){
     return (
 
@@ -7,7 +6,7 @@ function Login(){
             <header>
                 <nav className="navbar navbar-expand-lg bg-light">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="../html/index.html"><img className="navbar-brand navbar-logo"
+                        <a className="navbar-brand" href="/"><img className="navbar-brand navbar-logo"
                                 src="./src/assets/img/logoFAARTE.png" alt="Logo FARTE"/></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -28,7 +27,7 @@ function Login(){
                                 <a href="/login"><button type="button"
                                         className="btn btn-primary-button">Login</button></a>
                                 <span className="span-ou">Ou</span>
-                                <a href="/cadastro"><button type="button"
+                                <a href="/cadastrar"><button type="button"
                                         className="btn btn-primary-button">Cadastre-se</button></a>
                             </ul>
                         </div>

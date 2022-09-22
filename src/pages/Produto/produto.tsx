@@ -4,153 +4,151 @@ function Produto(){
 
     <body onload="loadProductPage()">
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../html/index.html"
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/"
             ><img
-              class="navbar-brand navbar-logo"
+              className="navbar-brand navbar-logo"
               src="../assets/img/logoFAARTE.png"
               alt="Logo FARTE"
           /></a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+            aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"/>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <form class="d-flex" role="search">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <form className="d-flex" role="search">
                 <input
-                  class="form-control me-2"
+                  className="form-control me-2"
                   type="search"
                   placeholder="Buscar"
                   aria-label="Search"
                 />
-                <button class="btn btn-outline-success-pesquisar" type="submit">
-                  <img class="icon-search" src="../assets/img/search.svg" />
+                <button className="btn btn-outline-success-pesquisar" type="submit">
+                  <img className="icon-search" src="../assets/img/search.svg" />
                 </button>
               </form>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
-                  href="../html/institucional.html"
+                  href="/institucional"
                   >Institucional</a
                 >
               </li>
-              <a href="../html/login.html"
-                ><button type="button" class="btn btn-primary-button">
+              <a href="/login"
+                ><button type="button" className="btn btn-primary-button">
                   Login
                 </button></a
               >
-              <span class="span-ou">Ou</span>
-              <a href="../html/fichacadastro.html"
-                ><button type="button" class="btn btn-primary-button">
+              <span className="span-ou">Ou</span>
+              <a href="/cadastrar"
+                ><button type="button" className="btn btn-primary-button">
                   Cadastre-se
-                </button></a
-              >
+                </button></a>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="card">
-        <img class="card-img-top" alt="..." id="produto-img" />
-        <div class="">
-          <h5 class="card-title" id="produto-title"></h5>
-          <p class="card-text" id="produto-text"></p>
-          <a href="#" class="btn-instituicao-postadora">Disponível em</a>
+      <div className="card">
+        <img className="card-img-top" alt="..." id="produto-img" />
+        <div className="">
+          <h5 className="card-title" id="produto-title"></h5>
+          <p className="card-text" id="produto-text"></p>
+          <a href="#" className="btn-instituicao-postadora">Disponível em</a>
         </div>
       </div>
 
       <h2>Produtos Relacionados</h2>
 
-      <section class="card-produto">
-        <div class="card-relacionados" id="card1">
+      <section className="card-produto">
+        <div className="card-relacionados" id="card1">
           <img
             src="../assets/img/img1.jpg"
-            class="card-img-top-rel"
+            className="card-img-top-rel"
             alt="..."
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
             <a
               href="#"
-              class="btn btn-primary"
+              className="btn btn-primary"
               onclick="handleSeeProducts(this, 'card1')"
               >Ver produto</a
             >
           </div>
         </div>
 
-        <div class="card-relacionados" id="card2">
+        <div className="card-relacionados" id="card2">
           <img
             src="../assets/img/6ffd62e0-5c50-45c1-9434-35a7f5d0a72e.jpg"
-            class="card-img-top-rel"
+            className="card-img-top-rel"
             alt="..."
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title 2</h5>
-            <p class="card-text">
+          <div className="card-body">
+            <h5 className="card-title">Card title 2</h5>
+            <p className="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content
             </p>
             <a
               href="#"
-              class="btn btn-primary"
+              className="btn btn-primary"
               onclick="handleSeeProducts(this, 'card2')"
               >Ver produto</a
             >
           </div>
         </div>
 
-        <div class="card-relacionados" id="card3">
+        <div className="card-relacionados" id="card3">
           <img
             src="../assets/img/8952a8d0-5273-4f79-a6c9-cf2ea6648e71.jpg"
-            class="card-img-top-rel"
+            className="card-img-top-rel"
             alt="..."
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
             <a
               href="#"
-              class="btn btn-primary"
+              className="btn btn-primary"
               onclick="handleSeeProducts(this, 'card3')"
               >Ver produto</a
             >
           </div>
         </div>
 
-        <div class="card-relacionados" id="card4">
+        <div className="card-relacionados" id="card4">
           <img
             src="../assets/img/8f3b1a6e-530a-4ccb-b895-881af8f49b12.jpg"
-            class="card-img-top-rel"
+            className="card-img-top-rel"
             alt="..."
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
             <a
               href="#"
-              class="btn btn-primary"
+              className="btn btn-primary"
               onclick="handleSeeProducts(this, 'card4')"
               >Ver produto</a
             >

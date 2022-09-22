@@ -26,8 +26,8 @@ function Home() {
                             <a className="nav-link active" aria-current="page" href="/institucional">Institucional</a>
                         </li>
                         <a href="/login"><button type="button" className="btn btn-primary-button">Login</button></a>
-                        <span className="span-ou">|</span>
-                        <a href="/cadastro"><button type="button" className="btn btn-primary-button">Cadastre-se</button></a>
+                        <span className="span-ou">ou</span>
+                        <a href="/cadastrar"><button type="button" className="btn btn-primary-button">Cadastre-se</button></a>
                     </ul>
                 </div>
             </div>

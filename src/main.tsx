@@ -8,6 +8,7 @@ import Home from './pages/Home/home'
 import Institucional from './pages/Institucional/Institucional'
 import Login from './pages/Login/login'
 
+// import de rotas
 import Rotas from './routes/rotas'
 
 // import de styles
